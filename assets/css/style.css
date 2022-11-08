@@ -1,0 +1,79 @@
+.play-icon {
+  cursor: pointer;
+}
+
+.block {
+  margin-top: 34px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.word {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.word-eng {
+    display: inline-block;
+    color: #00a84e;
+}
+
+.word-az {
+    display: inline-block;
+    color: #007bff;
+}
+
+.word-br {
+  margin-right: 14px;
+  margin-left: 14px;
+}
+
+.result-text {
+  margin-top: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.result-content {
+  text-align: center;
+}
+
+.result-content > span:not(:last-child) {
+  border-right: 2px solid #C9C9C9;
+  padding-right: 10px;
+  margin-right: 10px;
+}
+
+.result-true {
+    /* color: #00a84e; */
+}
+
+.result-false {
+    color: #dc3545;
+}
+
+.result-percent {
+    font-weight: bold;
+}
+
+.result-percent.bad {
+    color: #dc3545;
+}
+
+.result-percent.medium {
+    color: #ffc107;
+}
+
+.result-percent.good {
+    color: #00a84e;
+}
+
+.archive {
+    margin-top: 20px;
+    text-align: center;
+}
