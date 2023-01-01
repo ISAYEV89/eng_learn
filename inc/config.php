@@ -1,7 +1,7 @@
 <?php
 ob_start();
 session_start();
-$site_url = 'http://eng.local';
+$site_url = 'http://eng.local/';
 
 
 

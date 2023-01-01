@@ -10,12 +10,12 @@
                     <div class="form-group form-group-m w-100">
                         <label class="form-group__label w-100 mb-0">
                             <span>Ad *:</span>
-                            <input type="text" required class="form-control w-100"  placeholder="Ad *" name="name">
+                            <input type="text" required class="form-control w-100"  placeholder="Ad" name="name">
                         </label>
 
                         <label class="form-group__label w-100 mb-0">
                             <span>Soyad *:</span>
-                            <input type="text" required class="form-control w-100"  placeholder="Soyad *" name="surname">
+                            <input type="text" required class="form-control w-100"  placeholder="Soyad" name="surname">
                         </label>
                     </div>
 
@@ -23,21 +23,21 @@
                     <div class="form-group w-100">
                         <label class="form-group__label w-100 mb-0">
                             <span>Email *:</span>
-                            <input type="email" required class="form-control w-100"  placeholder="Email *" name="email">
+                            <input type="email" required class="form-control w-100"  placeholder="Email" name="email">
                         </label>
                     </div>
 
                     <div class="form-group w-100">
                         <label class="form-group__label w-100 mb-0">
                             <span>Kod *:</span>
-                            <input type="password" required class="form-control w-100"  placeholder="Kod *" name="password">
+                            <input type="password" required class="form-control w-100"  placeholder="Kod" name="password">
                         </label>
                     </div>
 
                     <div class="form-group w-100">
                         <label class="form-group__label w-100 mb-0">
                             <span>Kod təkrar *:</span>
-                            <input type="password" required class="form-control w-100"  placeholder="Kod təkrar *" name="re_password">
+                            <input type="password" required class="form-control w-100"  placeholder="Kod təkrar" name="re_password">
                         </label>
                     </div>
 

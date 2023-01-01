@@ -2,17 +2,17 @@
 
 
 <div class="container container--login">
-   <div class="col-12">
+   <div class="col-6">
        <div class="login-form">
 
            <form action="" method="POST">
                <div class="form-group">
                    <label for="email">Email:</label>
-                   <input type="email" required class="form-control" id="email" placeholder="Email" name="email">
+                   <input type="email"  class="form-control" id="email" placeholder="Email" name="email">
                </div>
                <div class="form-group">
                    <label for="pwd">Password:</label>
-                   <input type="password" required class="form-control" id="pwd" placeholder="Password" name="pswd">
+                   <input type="password"  class="form-control" id="pwd" placeholder="Password" name="pswd">
                </div>
 
                <?php
