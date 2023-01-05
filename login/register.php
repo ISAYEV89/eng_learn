@@ -1,11 +1,15 @@
-<?php require_once __DIR__ . '/include/header.php';?>
+<?php require_once __DIR__ . '/../include/header.php';?>
 
+<?php
+
+    print_r($_SESSION['user'])
+
+?>
 
     <div class="container container--login">
         <div class=" login-form col-xl-6">
 
-
-                <form action="" method="POST">
+                <form action="<?php echo $site_url . 'login/login-reg.php' ?> " method="POST">
 
                     <div class="form-group form-group-m w-100">
                         <label class="form-group__label w-100 mb-0">
@@ -37,38 +41,32 @@
                     <div class="form-group w-100">
                         <label class="form-group__label w-100 mb-0">
                             <span>Kod təkrar *:</span>
-                            <input type="password" required class="form-control w-100"  placeholder="Kod təkrar" name="re_password">
+                            <input type="password" required class="form-control w-100"  placeholder="Kod təkrar" name="password_re">
                         </label>
                     </div>
 
                     <div class="group__link-block">
-                        <a href="./login.php" class="group__link">Daxil ol</a>
+                        <a href="<?php echo $site_url . 'login/login.php' ?>" class="group__link">Daxil ol</a>
 
-                        <a href="./forgot.php" class="group__link">Şifrəni Unutdun?</a>
+                        <a href="forgot.php" class="group__link">Şifrəni Unutdun?</a>
                     </div>
 
                     <?php
-                    if (isset($_SESSION['msg'])) {
+                    if (isset($_SESSION['message'])) {
                         ?>
                         <div class="alert alert-danger">
-                            <?php echo $_SESSION['msg']; ?>
+                            <?php echo $_SESSION['message']; ?>
                         </div>
                         <?php
-                        unset($_SESSION['msg']);
+                        unset($_SESSION['message']);
                     }
                     ?>
 
-
-
-                    <button type="submit" name="submit" class="btn btn-primary">Qeydiyyat</button>
+                    <button type="submit" name="reg" class="btn btn-primary">Qeydiyyat</button>
                 </form>
-
 
         </div>
     </div>
 
 
-
-
-
-<?php require_once __DIR__ . '/include/footer.php' ?>
+<?php require_once __DIR__ . '/../include/footer.php' ?>

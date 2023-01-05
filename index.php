@@ -1,7 +1,7 @@
 <?php require_once __DIR__ . '/include/header.php';?>
 
 
-<div class="container">
+<div class="container container--mr">
 
     <div class="row">
 
