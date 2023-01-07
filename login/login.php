@@ -1,6 +1,6 @@
-<?php require_once __DIR__ . '/../include/header.php';?>
-
 <?php
+require_once __DIR__ . '/../include/header.php';
+require_once __DIR__ . '/../include/auth-login.php';
 
 if (isset($_POST['submit'])) {
 
@@ -19,7 +19,7 @@ if (isset($_POST['submit'])) {
             'name' => $user['name'],
             'surname' => $user['surname'],
             'email' => $user['email'],
-            'status' => $user['status'],
+            'status' => $user['s_id'],
             'verified' => $user['verified']
         ];
         header("Location: $site_url" . "index.php");

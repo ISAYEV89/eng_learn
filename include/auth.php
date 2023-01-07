@@ -1,17 +1,11 @@
 <?php
 
-if (isset($_SESSION['user']['status'])) {
-    if (($_SESSION['user']['status']) == 0) {
-        header('Location:' . $site_url);
-        exit;
-    }else if(!($_SESSION['user']['status']) == 0){
-        header('Location:' . $site_url . 'login/login.php');
-        exit;
-    }
-}
-
-if(empty(isset($_SESSION['user']))) {
-   echo 'a';
+if (empty(($_SESSION['user']))) {
+    header("Location: $site_url" . "login/login.php");
+    exit;
+} else if (!(($_SESSION['user']['status']) == $status_access)){
+    header("Location: $site_url" . "login/login.php");
+    exit;
 }
 
 ?>
