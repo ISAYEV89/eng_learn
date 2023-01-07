@@ -257,3 +257,16 @@ footer {
     justify-content: space-between;
     margin-bottom: 20px;
 }
+
+
+/* add new word*/
+
+.add-submit {
+    margin-top: 22px;
+    text-align: center;
+}
+
+.add-submit button{
+    width: 50%;
+    min-width: 200px;
+}

@@ -1,8 +1,7 @@
 <?php require_once __DIR__ . '/include/header.php';?>
 <?php require_once __DIR__ . '/include/auth.php'; ?>
 
-<div class="container container--mr">
-
+<div class="container">
     <div class="row">
 
         <div class="col-12 block">
@@ -40,13 +39,6 @@
     </div>
 
 </div>
-
-
-<!-- <input type="text" class="text">
-
-    <a href="" class="say">  Say </a>
-
-    -->
 
 
 <?php require_once __DIR__ . '/include/footer.php' ?>
