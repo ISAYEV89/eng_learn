@@ -8,4 +8,6 @@ if (empty(($_SESSION['user']))) {
     exit;
 }
 
+$u_id = $_SESSION['user']['id'];
+
 ?>

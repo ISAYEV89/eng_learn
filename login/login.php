@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
         header("Location: $site_url" . "index.php");
         exit;
     } else {
-        $_SESSION['message'] = 'Login və ya kod səhvdir';
+        $_SESSION['message']['login'] = 'Login və ya kod səhvdir';
         header("Location: $site_url" . "login/login.php");
         exit;
     }
@@ -50,13 +50,13 @@ if (isset($_POST['submit'])) {
                </div>
 
                <?php
-               if (isset($_SESSION['message'])) {
+               if (isset($_SESSION['message']['login'])) {
                    ?>
                    <div class="alert alert-danger">
-                       <?php echo $_SESSION['message']; ?>
+                       <?php echo $_SESSION['message']['login']; ?>
                    </div>
                    <?php
-                   unset($_SESSION['message']);
+                   unset($_SESSION['message']['login']);
                }
                ?>
 

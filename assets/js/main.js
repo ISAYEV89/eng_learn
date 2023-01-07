@@ -1,3 +1,5 @@
+const siteUrl = 'http://eng.local/';
+
 $(document).ready(function () {
 
 
@@ -82,5 +84,17 @@ $(document).ready(function () {
     $(".filter").click(function () {
         tl.reverse();
     });
+
+
+    /// delete
+
+    $('.deleteItem').click(function (e) {
+        if (confirm('Silmək istədiyinizdən əminsiniz')) {
+        } else {
+            e.preventDefault();
+        }
+    });
+
+
 
 });

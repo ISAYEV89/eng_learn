@@ -81,7 +81,7 @@ if(isset($_POST['add'])) {
                       VALUES ('$en_word','$az_word', '$u_id', 0, 0, 0, 0 ,0)");
         $sql->execute();
 
-        $_SESSION['message']['success'] = "Təzə söz əlavə olundu";
+        $_SESSION['message']['success'] = "Təzə söz əlavə olundu.";
     }
 
     header('Location:' . $site_url . 'page/add.php');
