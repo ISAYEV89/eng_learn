@@ -47,7 +47,11 @@ $baza2 = $baza->fetch(PDO::FETCH_ASSOC);
             </div>
 
             <div class="archive d-none">
-                <button type="button"  class="btn btn-secondary">Arxivə göndər</button>
+                <button type="button" id="sendArchive"  class="btn btn-secondary">Arxivə göndər</button>
+
+                <div class="d-none alert alert-success mt-3">
+                   Söz arxivə köçürüldü.
+                </div>
             </div>
 
         </div>

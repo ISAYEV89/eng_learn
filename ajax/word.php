@@ -74,3 +74,14 @@ if(isset($_POST['newWord'])){
     echo json_encode($word3);
 
 }
+
+if(isset($_POST['archive'])){
+
+    $id = $_POST['id'];
+
+    $updt = $db->prepare("UPDATE `word` SET s_id=:s_id WHERE id='$id'");
+    $updt->execute(array( 's_id' => 1));
+
+    echo 'done';
+
+}

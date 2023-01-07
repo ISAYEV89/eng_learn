@@ -64,6 +64,12 @@ $(document).ready(function () {
                 }
 
                 $('.result-percent').find('span').text(wordFromAjax.percent + '%');
+
+
+                if(wordFromAjax.count > 9 && wordFromAjax.percent > 89) {
+                    $('.archive').removeClass('d-none');
+                }
+
             }
         })
     });
@@ -144,11 +150,42 @@ $(document).ready(function () {
                 $('.word-eng ').text(wordFromAjax.en_word);
                 $('#showAnswer').show();
                 $('#showAnswer').data('id', wordFromAjax.id);
-
+                $('.archive').find('.alert').addClass('d-none')
             }
         })
 
 
     })
 
+    $('body').on('click', "#sendArchive", function (e) {
+
+
+        // let id  = wordFromAjax.id;
+        let id  = $('#showAnswer').data('id');
+
+        console.log(id);
+
+        $.ajax({
+            url: siteUrl + 'ajax/word.php',
+            method: 'POST',
+            data: {
+                "archive": true,
+                "id" : id,
+            },
+            dataType: "text",
+            async: false,
+            global: false,
+            success: function (data) {
+
+
+                if(data === 'done') {
+                    $('.archive').find('.alert').removeClass('d-none')
+                }
+
+
+            }
+        })
+
+
+    })
 });
