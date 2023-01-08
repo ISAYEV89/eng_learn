@@ -16,23 +16,23 @@ if (isset($_POST['reg'])) {
 
 
     if ($name == "") {
-        $_SESSION['message'] = 'Ad bölməsi doldurulmalıdır.';
+        $_SESSION['message']['login'] = 'Ad bölməsi doldurulmalıdır.';
         header('Location:' . $site_url . 'login/register.php');
     } else {
         if ($surname == "") {
-            $_SESSION['message'] = 'Soyad bölməsi doldurulmalıdır.';
+            $_SESSION['message']['login'] = 'Soyad bölməsi doldurulmalıdır.';
             header('Location:' . $site_url . 'login/register.php');
         } else {
             if ($email == "") {
-                $_SESSION['message'] = 'E-mail bölməsi doldurulmalıdır.';
+                $_SESSION['message']['login'] = 'E-mail bölməsi doldurulmalıdır.';
                 header('Location:' . $site_url . 'login/register.php');
             } else {
                 if ($password == "" || strlen($password) < 8) {
-                    $_SESSION['message'] = 'Şifrə ən azı 8 simvol olmalıdır.';
+                    $_SESSION['message']['login'] = 'Şifrə ən azı 8 simvol olmalıdır.';
                     header('Location:' . $site_url . 'login/register.php');
                 } else {
                     if ($password != $password_config) {
-                        $_SESSION['message'] = 'Kodlar eyni olmalıdır.';
+                        $_SESSION['message']['login'] = 'Kodlar eyni olmalıdır.';
                         header('Location:' . $site_url . 'login/register.php');
                     } else {
                         $password = md5($password);
@@ -44,7 +44,7 @@ if (isset($_POST['reg'])) {
                         if (!empty($email_check2)) {
 
 
-                            $_SESSION['message'] = 'Qeyd olunan e-mailnən qeydiyyatdan keçib. ';
+                            $_SESSION['message']['login'] = 'Qeyd olunan e-mailnən qeydiyyatdan keçib. ';
                             header('Location:' . $site_url . 'login/register.php');
 
 

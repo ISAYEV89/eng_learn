@@ -24,20 +24,20 @@ $baza2 = $baza->fetch(PDO::FETCH_ASSOC);
                 <span class="word-eng"  id='txtInput'> <?php echo $baza2['en_word'] ?>  </span>
             </div>
 
-            <div>
+            <div class="part-1">
                 <button type="button" id="showAnswer" data-id="<?php echo $baza2['id'] ?>" class="btn btn-dark">Cavaba bax</button>
             </div>
 
-            <div id="answerBtn" class="d-none">
+            <div id="answerBtn" class="part-2 d-none">
                 <a href="" id="trueAnswer"  class="btn btn-info mr-3">Düz tapdım</a>
                 <a href="" id="falseAnswer" class="btn btn-info ml-3">Səhv tapdım</a>
             </div>
 
-            <div  class="newWord d-none">
+            <div  class="newWord d-none part-3">
                 <button type="button" id="newWord" class="btn btn-dark">Yeni söz</button>
             </div>
 
-            <div class="result mt-4 d-none">
+            <div class="result mt-4 d-none part-3">
                 <p class="result-text">Ümumi nəticə</p>
                 <div class="result-content">
                     <span class="result-true"> Düz - <span></span> </span>

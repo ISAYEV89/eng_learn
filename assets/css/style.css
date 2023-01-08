@@ -338,9 +338,7 @@ ul.wui-side-menu-items {
     margin-bottom: 20px;
 }
 
-.form-group-m {
-    display: flex;
-}
+
 
 .form-group-m > .form-group__label:first-child  {
     margin-right: 10px;

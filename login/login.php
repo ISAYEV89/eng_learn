@@ -36,7 +36,7 @@ if (isset($_POST['submit'])) {
 
 
 <div class="container container--login">
-   <div class="col-6">
+   <div class="col-xl-6">
        <div class="login-form">
 
            <form action="" method="POST">

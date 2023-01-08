@@ -21,6 +21,7 @@ $(document).ready(function () {
 
                 $('.word').append('<span class="word-br"> - </span>');
                 $('.word').append(`<span class="word-az"> ${data.az_word} </span>`);
+
                 $('#showAnswer').hide();
                 $('#answerBtn').removeClass('d-none');
                 return wordFromAjax;
@@ -111,22 +112,12 @@ $(document).ready(function () {
             }
         })
 
-
-
-
-
-
-
-
     });
 
     $('body').on('click', "#newWord", function (e) {
 
 
         let id  = wordFromAjax.id;
-        // let id  = $('#showAnswer').data('id');
-
-        console.log(id);
 
         $.ajax({
             url: siteUrl + 'ajax/word.php',

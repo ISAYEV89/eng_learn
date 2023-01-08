@@ -9,7 +9,7 @@
         <li><a href="<?php echo $site_url . 'page/add.php'?>"><i class="fas fa-plus"></i> Əlavə et</a></li>
         <li><a href="<?php echo $site_url . 'page/list.php'?>"><i class="fas fa-stream"></i> Hamısına bax</a></li>
 <!--        <li><a href="#"><i class="fas fa-info-circle"></i> About</a></li>-->
-        <li><a href="<?php echo $site_url . '../login/logout.php' ?>"><i class="fas fa-sign-out-alt"></i> Logout </a></li>
+        <li><a href="<?php echo $site_url . '/../login/logout.php' ?>"><i class="fas fa-sign-out-alt"></i> Logout </a></li>
     </ul>
 </div>
 <header>
